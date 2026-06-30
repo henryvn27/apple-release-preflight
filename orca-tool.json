@@ -1,0 +1,23 @@
+{
+  "id": "apple-release-preflight",
+  "name": "Apple Release Preflight",
+  "repo": "https://github.com/henryvn27/apple-release-preflight",
+  "description": "Submission-readiness pack for TestFlight and App Store review: metadata, privacy, screenshots, review notes, and release blockers.",
+  "category": "release-ops",
+  "install": {
+    "git": "git clone https://github.com/henryvn27/apple-release-preflight.git"
+  },
+  "verify": "test -f commands/orca-app-store-preflight.md && test -f skills/orca-app-store-preflight/SKILL.md && test -f templates/app-store-submission-pack.md",
+  "dependencies": [
+    "app-store-connect",
+    "testflight"
+  ],
+  "conflicts": [],
+  "provides": [
+    "app-store-preflight",
+    "review-notes",
+    "submission-pack"
+  ],
+  "license": "MIT",
+  "source": "Extracted from retired hvn-stack."
+}
